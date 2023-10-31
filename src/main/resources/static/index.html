@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>SkillForge - TEST</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <body class="body_hide">
   <img src="./img/bcgr.png" class="background" />
@@ -15,17 +16,14 @@
     <img src="./img/logo-fff.svg" alt="" draggable="false" class="logo">
     <h1><span class="p">О</span>нлайн-<span class="o">п</span>латформа</h1>
 
-    <p>
-      <script>
-        var client = new XMLHttpRequest();
-        client.open('GET', './txt/falcon.txt');
-        client.onreadystatechange = function () {
-          alert(client.responseText);
-        }
-        client.send();</script>
-    </p>
+    <script>
+      $(document).ready(function() {
+        $('#txt').load('./includes/falcon.txt');
+      });
+    </script>
+    <p id="txt">
 
-    <script src="./js/main.js"></script>
+      <script src="./js/main.js"></script>
   </div>
 </body>
 
