@@ -2,18 +2,19 @@
 
 @viewport {
   width: device-width;
-    zoom: 1;
-    min-zoom: 0.5;
-    max-zoom: 3;
-    user-zoom: fixed;
+  zoom: 1;
+  min-zoom: 0.5;
+  max-zoom: 3;
+  user-zoom: fixed;
 }
 
 .body_hide {
-	opacity: 0;
-	transition: .9s opacity ease-in-out;
+  opacity: 0;
+  transition: .9s opacity ease-in-out;
 }
+
 .body_visible {
-	opacity: 1;
+  opacity: 1;
 }
 
 img.background {
@@ -31,7 +32,7 @@ img.background {
 body {
   overflow-x: hidden;
   display: flex;
-  
+
   background: linear-gradient(to top right, #66006b, #00296b);
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,4 +98,8 @@ span.p {
 
 span.o {
   color: #ff2f00;
+}
+
+.falcon {
+  max-width: 300px;
 }
