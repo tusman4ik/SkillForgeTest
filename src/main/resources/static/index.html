@@ -15,9 +15,15 @@
     <img src="./img/logo-fff.svg" alt="" draggable="false" class="logo">
     <h1><span class="p">О</span>нлайн-<span class="o">п</span>латформа</h1>
 
-    <p>Соколы (Falco) — род хищных птиц из семейства соколиных, широко распространённых в мире.<br>
-      Научное название Falco является производным от латинского слова «falx» («серп») и подчёркивает серпообразную форму
-      крыльев в полёте.</p>
+    <p>
+      <script>
+        var client = new XMLHttpRequest();
+        client.open('GET', './txt/falcon.txt');
+        client.onreadystatechange = function () {
+          alert(client.responseText);
+        }
+        client.send();</script>
+    </p>
 
     <script src="./js/main.js"></script>
   </div>
