@@ -1,0 +1,174 @@
+.container {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  display: inline;
+  flex-flow: column;
+  width: 70%;
+  max-width: 900px;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  align-items: start;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+
+  overflow-x: hidden;
+
+  background: linear-gradient(to top right, #1f0020, #000b1c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.videobox {
+  padding: 20px 10px 40px 10px;
+  display: flex;
+  width: 800px;
+  margin-top: 110px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column;
+}
+
+@media (min-width: 1200px) {
+  .videobox {
+    width: 1000px;
+  }
+}
+
+.glow:hover {
+  transform: scale(1);
+}
+
+.videobox--1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 80%;
+}
+.videobox--2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column;
+  width: auto;
+}
+
+.vb {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.rating-area {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+
+.rating-result {
+  width: 265px;
+  margin: 0 auto;
+}
+.rating-result span {
+  padding: 0;
+  font-size: 32px;
+  margin: 0 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+  content: "★";
+}
+.rating-result > span.active {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+
+.dfw {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-flow: row;
+}
+
+.df {
+  display: flex;
+  flex-flow: column;
+}
+
+.a {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.a1 {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 25px;
+}
+
+.logo {
+  width: 200px;
+  max-width: 80%;
+  text-shadow: #fff;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo:hover {
+  transform: scale(1);
+}

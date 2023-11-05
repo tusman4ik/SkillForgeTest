@@ -103,3 +103,34 @@ span.o {
 .falcon {
   max-width: 300px;
 }
+a.glow {
+  margin-top: 20px;
+  padding: 15px;
+}
+.glow {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: linear-gradient(#66006b, #cc0074);
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+  transition: 0.2s;
+}
+
+@-webkit-keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #f0f, 0 0 40px #0ff,
+      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 20px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.glow:hover {
+  transform: scale(1.1);
+}

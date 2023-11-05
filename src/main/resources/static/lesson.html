@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Урок | SkillForge</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/lesson.css" />
+    <title>Тестовый урок - SkillForge</title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <body class="body_hide">
+    <img src="./img/bcgr.png" class="background" />
+    <img src="./img/lines.svg" clsss="bcgr" alt="" />
+    <div class="a">
+      <p>Рейтинг курса:</p>
+      <div class="rating-result">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="a1">
+      <h1>ОГЭ (9 класс) <br />ИНФОРМАТИКА</h1>
+    </div>
+    <div class="container">
+      <a href="./index.html"
+        ><img src="./img/logo-fff.svg" alt="" draggable="false" class="logo"
+      /></a>
+      <h1>Тестовый урок</h1>
+      <div class="videobox glow">
+        <div class="vb">
+          <h2>Видео теория</h2>
+        </div>
+        <div class="vb">
+          <div class="videobox--1">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/K8D1zhE65Hs?si=IylObTqjLDzK-7HV"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="videobox--2">
+            <h3>Оцени качество видеоролика</h3>
+
+            <div class="rating-area">
+              <input type="radio" id="star-5" name="rating" value="5" />
+              <label for="star-5" title="Оценка «5»"></label>
+              <input type="radio" id="star-4" name="rating" value="4" />
+              <label for="star-4" title="Оценка «4»"></label>
+              <input type="radio" id="star-3" name="rating" value="3" />
+              <label for="star-3" title="Оценка «3»"></label>
+              <input type="radio" id="star-2" name="rating" value="2" />
+              <label for="star-2" title="Оценка «2»"></label>
+              <input type="radio" id="star-1" name="rating" value="1" />
+              <label for="star-1" title="Оценка «1»"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
 </html>
