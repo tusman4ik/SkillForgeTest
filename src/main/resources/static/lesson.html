@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Урок | SkillForge</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 1 - ОГЭ ИНФО 2024 | SkillForge</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body class="body_hide">
+    <header class="container header row">
+      <div class="div flex center">
+        <img src="./img/logo-fff.svg" alt="SkillForge" class="logo" />
+      </div>
+      <div class="div center flex wcenter">
+        <p>Обучение → ОГЭ → Информатика → <span>Задание №1</span></p>
+      </div>
+      <div class="div center textleft"><p id="info"></p></div>
+    </header>
+    <div class="wrapper">
+      <div class="container">
+        <div class="div center divb wcenter margincenter div--1">
+          <h2>Видеоразбор задания</h2>
+          <iframe class="player"
+            width="826"
+            height="478"
+            src="https://www.youtube.com/embed/K8D1zhE65Hs?si=JKlFr71ZfmkXyvF0"
+            title="Player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="div center divb bottomgr wcenter div--2" id="slide">
+          <h2>Текстовая теория</h2>
+          <div class="tt" id="slide-body">
+            <p class="textleft">Данная теория включает в себя:</p>
+            <ul class="textleft p">
+              <li>Теорию 1</li>
+              <li>Теорию 2</li>
+              <li>Теорию 3</li>
+            </ul>
+            <p class="textleft">
+              Ссылка на тему: <a href="https://adaeff.ru">https://adaeff.ru</a>
+            </p>
+            <p class="textleft" id="textteory"></p>
+          </div>
+          <div id="more"><span>Читать полностью</span></div>
+        </div>
+      </div>
+      <div class="container martop24px">
+        <div class="div center divb primer nobrr">
+          <h2>Пример задания</h2>
+        </div>
+        <div class="div center divb wcenter nobrl">
+          <h2>Решение задания</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/includes.js"></script>
 </html>

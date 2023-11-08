@@ -33,3 +33,14 @@ window.addEventListener("mousewheel", function(e) {
     return false;
   }
 });
+
+document.getElementById("slide").addEventListener("click", function () {
+  var body = document.getElementById("slide-body");
+  if (body.className == "expanded") {
+    body.className = "";
+    document.getElementById("more").textContent = "Читать полностью";
+  } else {
+    body.className = "expanded";
+    document.getElementById("more").textContent = "Свернуть";
+  }
+});
