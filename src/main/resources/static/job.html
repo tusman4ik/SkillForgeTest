@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание №1 | SkillForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+
+<body onload="init()">
+  <header>
+    <div class="col header-logo">
+      <img src="./img/header-logo.png" alt="" class="header-img" />
+      <img src="./img/header-logo-mobile.png" alt="" class="header-img-mobile" />
+    </div>
+    <div class="col header-text">
+      <h2 header-h2>ВЕБ-ПЛАТФОРМА</h2>
+    </div>
+    <div class="col header-path">
+      <p>Главная / ОГЭ (9 класс) / ИНФОРМАТИКА / ЗАДАНИЕ №1</p>
+    </div>
+  </header>
+  <div class="info">
+    <div class="col col-left">
+      <h2>
+        <span>Задание №1 - Количественные параметры информационных объектов</span>
+      </h2>
+      <h2>Сложность задания - <span>Сложность</span></h2>
+    </div>
+    <div class="col col-right">
+      <h2>Время на выполнение <span>10 минут</span></h2>
+      <h2>Вы выполняете задание уже <span>10 минут</span></h2>
+    </div>
+  </div>
+  <div class="container">
+    <main>
+      <div class="flex">
+        <div class="lr video">
+          <h2 class="head">Видеоурок</h2>
+          <video id="player" class="player" playsinline controls data-poster="/path/to/poster.jpg">
+            <source src="./img/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="lr asked">
+          <h2 class="head">Пример задания и решение</h2>
+          <p class="ans">
+            В кодировке КОИ-8 каждый символ кодируется 8 битами. Андрей
+            написал текст (в нем нет лишних пробелов): </br> <span class="accent">«Обь, Лена, Волга,
+              Москва, Макензи, Амазонка — реки».</span></br>Ученик вычеркнул из списка
+            название одной из рек. Заодно он вычеркнул ставшие лишними запятые
+            и пробелы — два пробела не должны идти подряд. </br>При этом размер
+            нового предложения в данной кодировке оказался на 8 байтов меньше,
+            чем размер исходного предложения. Напишите в ответе вычеркнутое
+            название реки.
+          </p>
+          <p class="ask">
+            Для того, чтобы решить задание необходимо понимать, что каждый символ кодируется 8 битами.
+            Зная, что каждые <span>8 бит = 1 байт</span>, получается, что каждый символ кодируется <span>1
+              байтом</span>.
+            Нам известно, что после вычеркивания название одной из рек, объём сообщения стал на 8 байтов меньше, то есть
+            на <span>8 символов</span>.
+            Нам также сказано, что ученик вычеркнул ставшие лишними запятую и пробел. Получается, что вычеркнутое слово
+            состоит из <span>8 - 2 = 6 символов</span>.
+            Под этот критерий подходит только <span>МОСКВА</span>. Это и есть ответ.
+          </p>
+        </div>
+      </div>
+      <div class="lr text">
+        <h2 class="head">Текстовая теория</h2>
+        <p>
+          Далеко-далеко за словесными горами в стране, гласных и согласных
+          живут рыбные тексты. Которое всеми имени, даже о маленькая продолжил
+          он проектах, запятой решила назад бросил рукопись подпоясал! Океана,
+          путь коварный, которой своего гор текст, несколько она повстречался
+          журчит точках собрал всеми предупреждал сих жизни. Рекламных образ
+          злых назад свой путь что ручеек курсивных сбить, он решила своего
+          имени диких? Грустный, ручеек напоивший. О дороге осталось
+          обеспечивает над дал путь рукописи себя последний напоивший текстов
+          страну океана ты переписывается, текстами выйти пояс щеке грамматики
+          имеет предупреждал сих, использовало свой запятых. Агентство,
+          переписали рекламных свою встретил парадигматическая заголовок даже
+          не, пояс пор запятой напоивший!
+        </p>
+      </div>
+    </main>
+    <div class="buttons">
+      <div class="home"><a href="#" class="button">На главную</a></div>
+      <div class="tojob"><a href="#" class="button button-tojob">К заданиям</a></div>
+      <div class="bn">
+        <div class="back"><a href="#" class="button button-next">Следующее</a></div>
+        <div class="next"><a href="#" class="button">Предыдущее</a></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <img src="./img/header-logo.png" alt="" class="footer-img" />
+    <h2>Платформа онлайн подготовки к государственным экзаменам</h2>
+    <p>
+      Самозанятый <span>Адаев Степан Сергеевич</span><br />ИНН 780268096063
+    </p>
+  </footer>
+</body>
+<script src="path/to/plyr.js"></script>
+<script>
+  const player = new Plyr("#player");
+</script>
+
+</html>
